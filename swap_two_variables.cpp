@@ -1,10 +1,13 @@
 //program for swap two veriables 
 #include<iostream>
 using namespace std;
-int a = 4 , b = 6;
+
  
  int main()
  {  
+     int a,b;
+     cout<<"Enter Two values for Swap :\n";
+     cin>>a>>b;
      //methode 1 using + and - arithmetic oprations
     a=a+b;
     b=a-b;
@@ -19,10 +22,10 @@ int a = 4 , b = 6;
     swap(a,b);
 
      //methode 4 using third veriable
-    int c=a;
+    int temp=a;
     a=b;
-    b=c;
-
+    b=temp;
+     cout<<"\nAfter four time swap it will give same input as an output\n";
      cout<<a<<" , "<<b;
      return 0;
  }
