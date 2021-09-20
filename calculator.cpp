@@ -1,4 +1,4 @@
-//simple calculator usin CPP for +-*/
+//simple calculator using CPP for +-*/
 #include<iostream>
 using namespace std;
 
@@ -42,7 +42,7 @@ int main()
     case '/' :
         if(b==0)
         {
-            cout<<"\n****Divide by 0 error****\n";
+            cerr<<"\n****Divide by 0 error****\n";
             continue;
         }
         float c;
@@ -55,7 +55,7 @@ int main()
     break;
 
     default:
-        cout<<"Wrong Choice";
+        cerr<<"Wrong Choice";
         
         cout<<"\nEnter Y or y to Continue: ";
         cin>>ch;
