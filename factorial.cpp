@@ -6,7 +6,8 @@ using namespace std;
 
 class fact{
     long long int ans=1;
-
+    //Factorial can be calculated using following recursive formula
+    // n! = n * (n-1)!
     public:
     int factorial(int n){   //Factorial Program using Recursion
         if(n==1)
@@ -14,6 +15,7 @@ class fact{
         else
             return n * factorial(n-1);
     }
+    //Factorial can also be calculated iteratively as recursion can be costly for large numbers.
     int factorial_normal(int m){    //Factorial Program using Loop
         for(int i = 1; i <= m; i++){
             ans *= i; 
